@@ -177,27 +177,30 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   Primo = true;
-   for (let i = 2; i < num / 3; i++)
-      if (num % i == 0){
-         Primo = false;
-      }
-   if (Primo) {
-      return ("Es numero primo, "+ num);
-   } else {
-      return("No es numero primo, " + num);
-   }
-}
+   let primo = true
 
-console.log(esPrimo(9))
-console.log(esPrimo(0))
-console.log(esPrimo(100))
-console.log(esPrimo(11))
+   if (num <= 4){
+      primo = false
+   }
+
+   for (let i = 2; i < num/2; i++){
+      if (num % i == 0)
+      return false
+   }
+
+   return primo
+}
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
+   if (valor == true){
+      return "Soy verdadero"
+   }
+   if (valor == false){
+      return "Soy falso"
+   }
 }
 
 function tieneTresDigitos(num) {
@@ -215,9 +218,22 @@ function doWhile(num) {
    // Implementar una función que aumente el valor recibido en 5 hasta un límite de 8 veces.
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
-   // Tu código:
+   // Tu código:// será el número que irá incrementando, dependiendo a esto se romperá el while.
+  result = 0; // será los resultados que imprimiremos cada vez que el while se repita.
+  do {
+    result = result + 5; // "result" incrementa en 5 en cada bucle.
+    num++; // "numero" incrementa en 1, así sucesivamente.
+    console.log(result);
+  } while (num < 8); // cuando "numero" llegue a < 8, el while se detendrá.
 }
 
+console.log(doWhile(1));
+console.log(doWhile(8));
+console.log(doWhile(20));
+
+console.log ((doWhile(50)))
+console.log ((doWhile(40)))
+console.log ((doWhile(5)))
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    obtenerMayor,
