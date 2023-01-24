@@ -219,21 +219,14 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:// será el número que irá incrementando, dependiendo a esto se romperá el while.
-  result = 0; // será los resultados que imprimiremos cada vez que el while se repita.
-  do {
-    result = result + 5; // "result" incrementa en 5 en cada bucle.
-    num++; // "numero" incrementa en 1, así sucesivamente.
-    console.log(result);
-  } while (num < 8); // cuando "numero" llegue a < 8, el while se detendrá.
-}
+   var counter = 0;
+   do{
+   num += 5;
+   counter++
+   } while(counter < 8);
+   return num;
+   }
 
-console.log(doWhile(1));
-console.log(doWhile(8));
-console.log(doWhile(20));
-
-console.log ((doWhile(50)))
-console.log ((doWhile(40)))
-console.log ((doWhile(5)))
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    obtenerMayor,
