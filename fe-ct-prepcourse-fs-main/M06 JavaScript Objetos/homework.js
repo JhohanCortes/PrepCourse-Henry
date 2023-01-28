@@ -7,13 +7,27 @@ function crearGato(nombre, edad) {
    // La propiedad "meow" será una función que retorne el string: "Meow!".
    // Retornar el objeto.
    // Tu código:
-}
-
+   
+   var gato = {
+      nombre: nombre,
+      edad: edad,
+      meow: function () {
+        return "Meow!";
+      }
+    };
+    return gato;
+  }
 function nuevoUsuario(nombre, email, password) {
    // Debes crear un nuevo objeto.
    // Este debe tener las propiedades: "nombre", "email" y "password" con sus respectivos valores.
    // Retornar el objeto.
    // Tu código:
+   let usuario = {
+      nombre: nombre,
+      email: email,
+      password: password
+   }
+   return usuario
 }
 
 function agregarPropiedad(objeto, propiedad) {
@@ -22,6 +36,12 @@ function agregarPropiedad(objeto, propiedad) {
    // Esta propiedad será igual al valor `null`.
    // Retornar el objeto.
    // Tu código:
+   let devolverObjeto = {
+      x: objeto.x,
+      y: objeto.y,
+      z: propiedad = null
+   }
+   return devolverObjeto
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -35,13 +55,25 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
    // El parámetro "objetoMisterioso" posee una propiedad con el nombre "numeroMisterioso".
    // Debes multiplicar este número por 5 y retornar el resultado.
    // Tu código:
+   objetoMisterioso = {
+      numeroMisterioso: objetoMisterioso * 5,
+   }
+   return objetoMisterioso
 }
+console.log (multiplicarNumeroDesconocidoPorCinco(-5))
+console.log (multiplicarNumeroDesconocidoPorCinco(999))
 
 function eliminarPropiedad(objeto, propiedad) {
    // El parámetro "propiedad" es una propiedad del objeto que recibes.
    // Debes eliminarla del objeto y retornarlo finalmente.
    // Tu código:
+   deleteP = {
+      objeto: objeto,
+      propiedad: propiedad = null
+   }
+   return deleteP
 }
+console.log (eliminarPropiedad(12, 12))
 
 function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.

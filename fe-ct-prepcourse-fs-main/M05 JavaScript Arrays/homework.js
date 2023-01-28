@@ -170,8 +170,6 @@ function mesesDelAño(array) {
   }
   return cont !== 3 ? "No se encontraron los meses pedidos" : newArray;
 }
-console.log ( mesesDelAño(["Enero", 'Diciembre', 'Abril', 'Junio', 'Julio', 'Noviembre', "Marzo", 'Mayo', 'Febrero']))
-console.log( mesesDelAño (['Marzo', 'Diciembre', 'Julio', 'Noviembre']))
 
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
